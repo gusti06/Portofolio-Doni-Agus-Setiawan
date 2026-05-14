@@ -1,15 +1,27 @@
-# Doni Agus Setiawan — Portfolio (Starter)
+# Doni Agus Setiawan — Portfolio
 
-This is a starter Next.js + Tailwind CSS portfolio for Doni Agus Setiawan (Mahasiswa Teknik Informatika ITERA).
+Personal portfolio website for Doni Agus Setiawan, Mahasiswa Teknik Informatika ITERA.
 
-Quick start:
+## Tech Stack
+
+- Next.js
+- React
+- Tailwind CSS
+- Framer Motion
+- AOS
+
+## Run Locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Notes:
-- Add your professional photo at `public/photo.svg` (or replace with `photo.jpg`).
-- Replace `public/cv-placeholder.txt` with `public/cv.pdf` when ready.
-- The project uses Tailwind; run `npx tailwindcss init` only if you want to regenerate config.
+## Deploy
+
+This repository contains the source code for the portfolio. To view the live website, deploy it with Vercel, Netlify, or GitHub Pages and use the deployed URL instead of the repository page.
+
+## Notes
+
+- Professional photo and documents are stored in `public/`.
+- Certificates and documentation images are organized in `public/certificates/`.
