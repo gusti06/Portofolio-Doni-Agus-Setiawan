@@ -1,16 +1,9 @@
 import { useEffect, useState } from 'react'
-import { FiSun, FiMoon } from 'react-icons/fi'
 
 export default function Header(){
-  const [dark, setDark] = useState(false)
   const [active, setActive] = useState('hero')
 
   useEffect(()=>{
-    const stored = localStorage.getItem('theme')
-    if(stored === 'dark'){
-      setDark(true)
-      document.documentElement.classList.add('dark')
-    }
     const sections = ['hero','about','leadership','projects','skills','certificates','contact']
     const onScroll = ()=>{
       const scrollPos = window.scrollY + 120
@@ -28,26 +21,15 @@ export default function Header(){
     return ()=> window.removeEventListener('scroll', onScroll)
   },[])
 
-  const toggle = ()=>{
-    const next = !dark
-    setDark(next)
-    if(next) document.documentElement.classList.add('dark')
-    else document.documentElement.classList.remove('dark')
-    localStorage.setItem('theme', next ? 'dark' : 'light')
-  }
-
   return (
-    <header className="py-4 sticky top-0 z-40 backdrop-blur bg-black/30">
-      <div className="container mx-auto flex items-center justify-between px-4">
-        <a href="#hero" className="font-bold text-xl">Doni Agus</a>
-        <nav className="flex items-center gap-4">
-          <a href="#about" className={`hover:text-neon ${active==='about' ? 'text-neon' : ''}`}>About</a>
-          <a href="#leadership" className={`hover:text-neon ${active==='leadership' ? 'text-neon' : ''}`}>Leadership</a>
-          <a href="#projects" className={`hover:text-neon ${active==='projects' ? 'text-neon' : ''}`}>Projects</a>
-          <a href="#contact" className={`hover:text-neon ${active==='contact' ? 'text-neon' : ''}`}>Contact</a>
-          <button onClick={toggle} className="p-2 rounded-md bg-white/6">
-            {dark ? <FiSun/> : <FiMoon/>}
-          </button>
+    <header className="sticky top-0 z-40 border-b border-white/10 bg-black/55 backdrop-blur-md">
+      <div className="container mx-auto flex flex-col gap-3 px-4 py-3 md:flex-row md:items-center md:justify-between">
+        <a href="#hero" className="font-bold text-lg tracking-wide md:text-xl">Doni Agus Setiawan </a>
+        <nav className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm md:justify-end md:text-base">
+          <a href="#about" className={`rounded-full px-3 py-1 transition-colors hover:bg-white/8 hover:text-neon ${active==='about' ? 'bg-white/8 text-neon' : ''}`}>About</a>
+          <a href="#leadership" className={`rounded-full px-3 py-1 transition-colors hover:bg-white/8 hover:text-neon ${active==='leadership' ? 'bg-white/8 text-neon' : ''}`}>Leadership</a>
+          <a href="#projects" className={`rounded-full px-3 py-1 transition-colors hover:bg-white/8 hover:text-neon ${active==='projects' ? 'bg-white/8 text-neon' : ''}`}>Projects</a>
+          <a href="#contact" className={`rounded-full px-3 py-1 transition-colors hover:bg-white/8 hover:text-neon ${active==='contact' ? 'bg-white/8 text-neon' : ''}`}>Contact</a>
         </nav>
       </div>
     </header>
