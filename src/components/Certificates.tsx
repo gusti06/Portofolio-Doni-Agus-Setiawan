@@ -1,3 +1,5 @@
+import { assetPath } from '../lib/assetPath'
+
 type CertificateItem = {
   title: string
   issuer: string
@@ -16,7 +18,7 @@ export default function Certificates(){
       year: '2024',
       category: 'Committee',
       tone: 'from-amber-200/20 via-white/5 to-amber-400/10',
-      file: '/certificates/dosen-wali-chit-chat.png',
+      file: assetPath('/certificates/dosen-wali-chit-chat.png'),
       previewType: 'image'
     },
     {
@@ -25,7 +27,7 @@ export default function Certificates(){
       year: '2024',
       category: 'Volunteer',
       tone: 'from-cyan-300/20 via-white/5 to-blue-400/10',
-      file: '/certificates/hmif-mengabdi.jpg',
+      file: assetPath('/certificates/hmif-mengabdi.jpg'),
       previewType: 'image'
     },
     {
@@ -34,7 +36,7 @@ export default function Certificates(){
       year: '2025',
       category: 'Seminar',
       tone: 'from-red-300/20 via-white/5 to-orange-300/10',
-      file: '/certificates/seminar-public-speaking.jpg',
+      file: assetPath('/certificates/seminar-public-speaking.jpg'),
       previewType: 'image'
     },
     {
@@ -43,7 +45,7 @@ export default function Certificates(){
       year: '2025',
       category: 'Staff',
       tone: 'from-teal-300/20 via-white/5 to-emerald-400/10',
-      file: '/certificates/panitia-dugen-2025.jpg',
+      file: assetPath('/certificates/panitia-dugen-2025.jpg'),
       previewType: 'image'
     },
     {
@@ -52,7 +54,7 @@ export default function Certificates(){
       year: '2024',
       category: 'Seminar',
       tone: 'from-indigo-300/20 via-white/5 to-violet-400/10',
-      file: '/certificates/seminar-kependudukan.png',
+      file: assetPath('/certificates/seminar-kependudukan.png'),
       previewType: 'image'
     },
     {
@@ -61,7 +63,7 @@ export default function Certificates(){
       year: '2025',
       category: 'Certification',
       tone: 'from-blue-300/20 via-white/5 to-sky-400/10',
-      file: '/certificates/ibm-certificate.pdf',
+      file: assetPath('/certificates/ibm-certificate.pdf'),
       previewType: 'pdf'
     },
     {
@@ -70,7 +72,7 @@ export default function Certificates(){
       year: '2024',
       category: 'Volunteer',
       tone: 'from-fuchsia-300/20 via-white/5 to-cyan-400/10',
-      file: '/certificates/hmif-mengabdi.pdf',
+      file: assetPath('/certificates/hmif-mengabdi.pdf'),
       previewType: 'pdf'
     }
   ]

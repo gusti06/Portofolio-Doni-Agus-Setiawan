@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion'
-
 export default function Projects(){
   const projects = [
     {
@@ -33,14 +31,9 @@ export default function Projects(){
       <h2 className="text-2xl font-bold mb-6">Featured Projects</h2>
       <div className="grid md:grid-cols-3 gap-6">
         {projects.map(p=> (
-          <motion.div
+          <article
             key={p.title}
-            className="p-4 bg-white/3 rounded-lg"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            whileHover={{ scale: 1.03 }}
-            transition={{ duration: 0.4 }}
+            className="p-4 bg-white/3 rounded-lg transition duration-300 hover:-translate-y-1 hover:bg-white/5"
           >
             <h3 className="font-semibold">{p.title}</h3>
             <p className="text-sm mt-2">{p.desc}</p>
@@ -49,7 +42,7 @@ export default function Projects(){
             <div className="mt-4 flex gap-2">
               <a href={p.github} target="_blank" rel="noreferrer" className="flex-1 px-3 py-1 bg-neon text-black rounded text-center text-sm font-semibold hover:brightness-110 transition">GitHub</a>
             </div>
-          </motion.div>
+          </article>
         ))}
       </div>
     </section>

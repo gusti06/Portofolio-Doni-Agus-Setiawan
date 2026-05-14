@@ -1,3 +1,5 @@
+import { assetPath } from '../lib/assetPath'
+
 export default function Timeline(){
   const organisationalExperience = [
     {
@@ -7,9 +9,9 @@ export default function Timeline(){
         'Memimpin dan mengatur seluruh rangkaian kegiatan acara selama satu bulan pelaksanaan KKN, termasuk koordinasi tim, penyusunan konsep acara, pengaturan jadwal, dan komunikasi antar divisi.',
       tags: ['Leadership', 'Event Management', 'Team Coordination'],
       images: [
-        '/FOTO%20MC%20KKN%201.jpeg',
-        '/FOTO%20MC%20KKN%202.jpeg',
-        '/FOTO%20MC%20KKN%203.jpeg',
+        assetPath('/FOTO%20MC%20KKN%201.jpeg'),
+        assetPath('/FOTO%20MC%20KKN%202.jpeg'),
+        assetPath('/FOTO%20MC%20KKN%203.jpeg'),
       ],
       imageAlt: 'Dokumentasi MC KKN Desa Hanura',
     },
@@ -89,8 +91,8 @@ export default function Timeline(){
       description: 'Menjadi MC pada kegiatan Cyberia Akrap / Sikrap 2024 dan menjaga alur acara tetap hidup serta terarah.',
       tags: ['MC', 'Public Speaking'],
       images: [
-        '/FOTO%20MC%20SIKRAP%201.jpeg',
-        '/FOTO%20MC%20SIKRAP%202.jpeg',
+        assetPath('/FOTO%20MC%20SIKRAP%201.jpeg'),
+        assetPath('/FOTO%20MC%20SIKRAP%202.jpeg'),
       ],
       imageAlt: 'Dokumentasi MC Sikrap 2024',
     },
@@ -183,7 +185,7 @@ export default function Timeline(){
       title: 'MC Wisuda ITERA Periode 23',
       description: 'Menjadi MC pada momen wisuda ITERA Periode 23 dan memandu jalannya acara resmi universitas.',
       tags: ['MC', 'Formal Event', 'Public Speaking'],
-      image: '/FOTO%20MC%20WISUDA.jpeg',
+      image: assetPath('/FOTO%20MC%20WISUDA.jpeg'),
       imageAlt: 'Dokumentasi MC Wisuda ITERA Periode 23',
     },
     {

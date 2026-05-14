@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import Link from 'next/link'
 import { FiSun, FiMoon } from 'react-icons/fi'
 
 export default function Header(){
@@ -40,7 +39,7 @@ export default function Header(){
   return (
     <header className="py-4 sticky top-0 z-40 backdrop-blur bg-black/30">
       <div className="container mx-auto flex items-center justify-between px-4">
-        <Link href="#" className="font-bold text-xl">Doni Agus</Link>
+        <a href="#hero" className="font-bold text-xl">Doni Agus</a>
         <nav className="flex items-center gap-4">
           <a href="#about" className={`hover:text-neon ${active==='about' ? 'text-neon' : ''}`}>About</a>
           <a href="#leadership" className={`hover:text-neon ${active==='leadership' ? 'text-neon' : ''}`}>Leadership</a>

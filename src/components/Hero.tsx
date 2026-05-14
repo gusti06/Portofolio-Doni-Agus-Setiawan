@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from 'react-icons/fa'
+import { assetPath } from '../lib/assetPath'
 
 function TypeWriter({ texts = [], speed = 90 }: { texts?: string[], speed?: number }){
   const [index, setIndex] = useState(0)
@@ -40,7 +41,7 @@ export default function Hero(){
           </div>
           <p className="mt-4 text-gray-300">Mahasiswa Teknik Informatika Institut Teknologi Sumatera yang aktif dalam pengembangan teknologi, kepemimpinan organisasi, dan manajemen proyek. Memiliki pengalaman membangun website desa dan BUMDES saat KKN, mengembangkan project game berbasis Object Oriented Programming, serta memimpin berbagai kegiatan kampus sebagai koordinator dan kepala divisi acara. Berorientasi pada pengembangan solusi digital yang bermanfaat, dengan kombinasi kemampuan teknis, komunikasi, teamwork, dan leadership yang kuat.</p>
           <div className="mt-6 flex gap-3">
-            <a href="/CV%20Doni%20Agus%20Setiawan.pdf" className="px-4 py-2 bg-neon text-black rounded-md">Download CV</a>
+            <a href={assetPath('/CV%20Doni%20Agus%20Setiawan.pdf')} className="px-4 py-2 bg-neon text-black rounded-md">Download CV</a>
             <a href="#contact" className="px-4 py-2 border border-white/10 rounded-md">Contact Me</a>
             <a href="#projects" className="px-4 py-2 bg-white/6 rounded-md">View Projects</a>
           </div>
@@ -53,7 +54,7 @@ export default function Hero(){
         </div>
         <div className="flex justify-center md:justify-end">
           <div className="w-64 h-64 rounded-2xl bg-gradient-to-br from-white/6 to-white/3 p-1 glass">
-            <img src="/FOTO%20PORTO.jpeg" alt="Doni Agus Setiawan" className="w-full h-full object-cover rounded-xl" />
+            <img src={assetPath('/FOTO%20PORTO.jpeg')} alt="Doni Agus Setiawan" className="w-full h-full object-cover rounded-xl" />
           </div>
         </div>
       </div>
