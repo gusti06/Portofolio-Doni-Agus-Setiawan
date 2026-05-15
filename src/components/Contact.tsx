@@ -3,6 +3,10 @@ export default function Contact(){
   const whatsappLink = `https://wa.me/${whatsappNumber}`
   const email = 'doni.123140009@student.itera.ac.id'
   const linkedin = 'https://www.linkedin.com/in/doni-agus-setiawan-a7a0202b2/'
+  const instagram = 'https://instagram.com/__tyqz'
+  const instagramUsername = '@__tyqz'
+  const github = 'https://github.com/gusti06'
+  const githubUsername = 'gusti06'
 
   return (
     <section id="contact" className="py-16" data-aos="fade-up">
@@ -30,6 +34,19 @@ export default function Contact(){
             </a>
 
             <a
+              href={instagram}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center justify-between rounded-xl border border-white/10 bg-black/20 px-4 py-3 transition hover:border-neon/40 hover:bg-white/5"
+            >
+              <span>
+                <span className="mr-2">📸</span>
+                Instagram
+              </span>
+              <span className="text-white/70 break-all text-right">{instagramUsername}</span>
+            </a>
+
+            <a
               href={`mailto:${email}`}
               className="flex items-center justify-between rounded-xl border border-white/10 bg-black/20 px-4 py-3 transition hover:border-neon/40 hover:bg-white/5"
             >
@@ -38,6 +55,19 @@ export default function Contact(){
                 Email
               </span>
               <span className="text-white/70 break-all text-right">{email}</span>
+            </a>
+
+            <a
+              href={github}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center justify-between rounded-xl border border-white/10 bg-black/20 px-4 py-3 transition hover:border-neon/40 hover:bg-white/5"
+            >
+              <span>
+                <span className="mr-2">🐙</span>
+                GitHub
+              </span>
+              <span className="text-white/70 break-all text-right">{githubUsername}</span>
             </a>
 
             <a

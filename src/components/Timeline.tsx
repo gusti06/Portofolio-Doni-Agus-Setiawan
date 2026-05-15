@@ -3,7 +3,7 @@ import { assetPath } from '../lib/assetPath'
 export default function Timeline(){
   const organisationalExperience = [
     {
-      period: '2024',
+      period: '6 Jan 2026 - 6 Feb 2026',
       title: 'Kepala Divisi Acara - KKN Desa Hanura',
       description:
         'Memimpin dan mengatur seluruh rangkaian kegiatan acara selama satu bulan pelaksanaan KKN, termasuk koordinasi tim, penyusunan konsep acara, pengaturan jadwal, dan komunikasi antar divisi.',
@@ -16,74 +16,108 @@ export default function Timeline(){
       imageAlt: 'Dokumentasi MC KKN Desa Hanura',
     },
     {
-      period: 'Agt 2023 - Sekarang',
+      period: 'Des 2025 - Sekarang',
       title: 'Kepala Divisi Seleksi dan Orientasi - KSR PMI Unit ITERA',
       description:
         'Memimpin divisi yang bertanggung jawab atas administrasi dan operasional kegiatan KSR, termasuk koordinasi seleksi anggota dan orientasi kegiatan organisasi.',
       tags: ['Leadership', 'Administration', 'Operations'],
     },
     {
-      period: 'Mar 2025 - Mar 2026',
-      title: 'BPH PIK-R Sejahtera ITERA - Divisi LifeSkill',
-      description:
-        'Sebagai Kakak Asuh TPB 52, membimbing mahasiswa TPB/baru pada tahun 2024 serta mengelola program life skill dan kewirausahaan untuk anggota PIK-R.',
-      tags: ['Mentoring', 'Life Skill', 'Entrepreneurship'],
-    },
-    {
-      period: 'Mar 2024 - Mar 2025',
-      title: 'PIK-R Sejahtera ITERA - Staf BPH LifeSkill',
-      description:
-        'Berpartisipasi saat magang di divisi Humas PIK-R Sejahtera dan saat ini sedang magang di divisi PSKS.',
-      tags: ['Public Relations', 'PSKS', 'Internship'],
-    },
-    {
-      period: 'Jan 2024 - Jan 2025',
+      period: 'Jan 2025 - Jan 2026',
       title: 'Staf PPK - BPH HMIF ITERA',
       description:
         'Merancang dan melaksanakan program pengembangan keprofesian anggota HMIF agar aktivitas organisasi dan pengembangan diri berjalan selaras.',
       tags: ['Professional Development', 'Program Planning', 'HMIF'],
+      image: assetPath('/Sertif%20HMIF.pdf'),
+      imageAlt: 'Dokumentasi sertifikat HMIF ITERA',
+      previewType: 'pdf',
     },
     {
-      period: 'Feb 2026 - Sekarang',
-      title: 'Bendahara - Ambalan Singa Branta, Pramuka SMAN 1 Gadingrejo',
+      period: 'Mar 2024 - Mar 2025',
+      title: 'BPH PIK-R Sejahtera ITERA - Divisi LifeSkill',
       description:
-        'Bertanggung jawab atas pengelolaan keuangan ambalan pramuka, termasuk penerimaan dan pengeluaran dana, penyusunan anggaran, dan memastikan anggaran sesuai kebutuhan organisasi.',
-      tags: ['Finance', 'Budgeting', 'Planning'],
+        'Sebagai Kakak Asuh TPB 52, membimbing mahasiswa TPB/baru pada tahun 2024 serta mengelola program life skill dan kewirausahaan untuk anggota PIK-R.',
+      tags: ['Mentoring', 'Life Skill', 'Entrepreneurship'],
+      images: [
+        assetPath('/FOTO%20BPH%20PIK%20R%20.jpeg'),
+        assetPath('/FOTO%20BPH%20PIK%20R%201.jpeg'),
+      ],
+      imageAlt: 'Dokumentasi BPH PIK-R Sejahtera ITERA Divisi LifeSkill',
     },
     {
-      period: 'Jul 2020 - Jul 2023',
+      period: 'Jan 2024 - Jan 2025',
       title: 'PIK-R Sejahtera ITERA - Staf BPH LifeSkill',
       description:
         'Menjadi bagian dari pengembangan life skill, kakak asuh TPB, dan terlibat dalam kegiatan organisasi sejak awal periode kepengurusan.',
       tags: ['Kakak Asuh', 'Life Skill', 'Organization'],
+      images: [
+        assetPath('/FOTO%20KAKAK%20ASUH%201.jpeg'),
+        assetPath('/FOTO%20KAKAK%20ASUH%202.jpeg'),
+      ],
+      imageAlt: 'Dokumentasi Kakak Asuh PIK-R Sejahtera ITERA',
     },
     {
-      period: 'Sep 2022 - Jun 2023',
+      period: 'Mar 2023 - Mar 2024',
+      title: 'PIK-R Sejahtera ITERA - Staf BPH LifeSkill',
+      description:
+        'Berpartisipasi saat magang di divisi Humas PIK-R Sejahtera dan saat ini sedang magang di divisi PSKS.',
+      tags: ['Public Relations', 'PSKS', 'Internship'],
+      images: [
+        assetPath('/LifeSkill%201.jpeg'),
+        assetPath('/LifeSkill%202.jpeg'),
+      ],
+      imageAlt: 'Dokumentasi LifeSkill PIK-R Sejahtera ITERA',
+    },
+    {
+      period: 'Feb 2021 - 2023',
+      title: 'Bendahara - Ambalan Singa Branta, Pramuka SMAN 1 Gadingrejo',
+      description:
+        'Bertanggung jawab atas pengelolaan keuangan ambalan pramuka, termasuk penerimaan dan pengeluaran dana, penyusunan anggaran, dan memastikan anggaran sesuai kebutuhan organisasi.',
+      tags: ['Finance', 'Budgeting', 'Planning'],
+      images: [
+        assetPath('/AMBALAN%20SMA%201.jpeg'),
+        assetPath('/AMBALAN%20SMA%202.jpeg'),
+        assetPath('/AMBALAN%20SMA%203.jpeg'),
+      ],
+      imageAlt: 'Dokumentasi Ambalan Singa Branta SMAN 1 Gadingrejo',
+    },
+    {
+      period: 'Feb 2021 - Feb 2023',
+      title: 'Anggota Ekstrakurikuler Paskibra - SMAN 1 Gadingrejo',
+      description:
+        'Berkegiatan sebagai anggota ekstrakurikuler Paskibra SMAN 1 Gadingrejo dan terlibat dalam latihan kedisiplinan, baris-berbaris, serta persiapan kegiatan sekolah.',
+      tags: ['Discipline', 'Teamwork', 'Training'],
+      images: [
+        assetPath('/PASKIB%20SMA%201.jpeg'),
+        assetPath('/PASKIB%20SMA%202.jpeg'),
+        assetPath('/PASKIB%20SMA%203.jpeg'),
+        assetPath('/PASKIB%20SMA%204.jpeg'),
+      ],
+      imageAlt: 'Dokumentasi Paskibra SMAN 1 Gadingrejo',
+    },
+    {
+      period: 'Jan 2021 - Jan 2023',
       title: 'Anggota Aktif - Palang Merah Remaja (PMR) SMAN 1 Gadingrejo',
       description:
         'Memberikan pertolongan pertama pada kondisi darurat serta terlibat dalam kegiatan kemanusiaan seperti penggalangan dana, pembagian bantuan, dan kunjungan sosial.',
       tags: ['First Aid', 'Humanitarian Work', 'Volunteering'],
+      images: [
+        assetPath('/PMR%20SMA%201.jpeg'),
+        assetPath('/PMR%20SMA%202.jpeg'),
+        assetPath('/PMR%20SMA%203.jpeg'),
+      ],
+      imageAlt: 'Dokumentasi PMR SMAN 1 Gadingrejo',
     },
   ]
 
   const committeeExperience = [
     {
-      period: '2024',
-      title: 'PPLK 2024 - PJ Sekre Medis',
-      description: 'Mengelola koordinasi administrasi sekretariat dan mendukung kebutuhan medis kegiatan PPLK 2024.',
-      tags: ['Secretariat', 'Medical', 'Event Support'],
-    },
-    {
-      period: '2024',
-      title: 'Pelatihan Dosen Wali & Chit Chat 2024 - Acara',
-      description: 'Membantu menyusun dan menjalankan rangkaian acara agar kegiatan berjalan tertib dan tepat waktu.',
-      tags: ['Event', 'Coordination'],
-    },
-    {
-      period: '2024',
-      title: 'ITERUN 2024 - Medis',
-      description: 'Terlibat sebagai tim medis untuk mendukung keamanan dan penanganan peserta selama kegiatan berlangsung.',
-      tags: ['Medical', 'Safety'],
+      period: '14 - 15 Nov 2025',
+      title: 'MC Wisuda ITERA Periode 23',
+      description: 'Menjadi MC pada momen wisuda ITERA Periode 23 dan memandu jalannya acara resmi universitas.',
+      tags: ['MC', 'Formal Event', 'Public Speaking'],
+      image: assetPath('/FOTO%20MC%20WISUDA.jpeg'),
+      imageAlt: 'Dokumentasi MC Wisuda ITERA Periode 23',
     },
     {
       period: '2024',
@@ -95,6 +129,54 @@ export default function Timeline(){
         assetPath('/FOTO%20MC%20SIKRAP%202.jpeg'),
       ],
       imageAlt: 'Dokumentasi MC Sikrap 2024',
+    },
+    {
+      period: '2025',
+      title: 'StafSus PJ Sekre Medis PPLK 2025',
+      description: 'Membantu kebutuhan sekretariat medis dan memastikan administrasi berjalan rapi selama rangkaian kegiatan.',
+      tags: ['Secretariat', 'Medical'],
+    },
+    {
+      period: '2024',
+      title: 'ITERUN 2024 - Medis',
+      description: 'Terlibat sebagai tim medis untuk mendukung keamanan dan penanganan peserta selama kegiatan berlangsung.',
+      tags: ['Medical', 'Safety'],
+      images: [
+        assetPath('/iterun%201.jpeg'),
+        assetPath('/iterun%202.jpeg'),
+        assetPath('/iterun%203.jpeg'),
+        assetPath('/iterun%204.jpeg'),
+      ],
+      imageAlt: 'Dokumentasi ITERUN 2024 - Medis',
+    },
+    {
+      period: '2024',
+      title: 'Pelatihan Dosen Wali & Chit Chat 2024 - Acara',
+      description: 'Membantu menyusun dan menjalankan rangkaian acara agar kegiatan berjalan tertib dan tepat waktu.',
+      tags: ['Event', 'Coordination'],
+    },
+    {
+      period: '2024',
+      title: 'Dies Natalis KSR 2024 - Acara',
+      description: 'Terlibat dalam panitia acara untuk mendukung perayaan dan keberlangsungan kegiatan organisasi.',
+      tags: ['Event', 'Organization'],
+      images: [
+        assetPath('/dies%20ksr%201.jpeg'),
+        assetPath('/dies%20ksr%202.jpeg'),
+        assetPath('/dies%20ksr%203.jpeg'),
+      ],
+      imageAlt: 'Dokumentasi Dies Natalis KSR 2024',
+    },
+    {
+      period: '2024',
+      title: 'PPLK 2024 - PJ Sekre Medis',
+      description: 'Mengelola koordinasi administrasi sekretariat dan mendukung kebutuhan medis kegiatan PPLK 2024.',
+      tags: ['Secretariat', 'Medical', 'Event Support'],
+      images: [
+        assetPath('/pplk%202024%201.jpeg'),
+        assetPath('/pplk%202024%202.jpeg'),
+      ],
+      imageAlt: 'Dokumentasi PPLK 2024 - Sekre Medis',
     },
     {
       period: '2024',
@@ -113,12 +195,6 @@ export default function Timeline(){
       title: 'FTI EXPO 2024 - Acara',
       description: 'Membantu operasional acara dan memastikan kebutuhan pelaksanaan kegiatan terpenuhi.',
       tags: ['Event', 'Operations'],
-    },
-    {
-      period: '2024',
-      title: 'Dies Natalis KSR 2024 - Acara',
-      description: 'Terlibat dalam panitia acara untuk mendukung perayaan dan keberlangsungan kegiatan organisasi.',
-      tags: ['Event', 'Organization'],
     },
     {
       period: '2025',
@@ -143,12 +219,6 @@ export default function Timeline(){
       title: 'PILDUGEN 2025 - Staff Humas',
       description: 'Mendukung tim humas dalam komunikasi, koordinasi, dan hubungan antar pihak selama kegiatan.',
       tags: ['Public Relations', 'Communication'],
-    },
-    {
-      period: '2025',
-      title: 'StafSus PJ Sekre Medis PPLK 2025',
-      description: 'Membantu kebutuhan sekretariat medis dan memastikan administrasi berjalan rapi selama rangkaian kegiatan.',
-      tags: ['Secretariat', 'Medical'],
     },
     {
       period: '2025',
@@ -181,14 +251,6 @@ export default function Timeline(){
       tags: ['Public Relations', 'Career Development'],
     },
     {
-      period: '14 - 15 Nov 2025',
-      title: 'MC Wisuda ITERA Periode 23',
-      description: 'Menjadi MC pada momen wisuda ITERA Periode 23 dan memandu jalannya acara resmi universitas.',
-      tags: ['MC', 'Formal Event', 'Public Speaking'],
-      image: assetPath('/FOTO%20MC%20WISUDA.jpeg'),
-      imageAlt: 'Dokumentasi MC Wisuda ITERA Periode 23',
-    },
-    {
       period: '2025',
       title: 'Sarasehan IF 2025 - Acara',
       description: 'Membantu tim acara dalam persiapan dan pelaksanaan sarasehan agar berlangsung tertib dan nyaman.',
@@ -202,24 +264,37 @@ export default function Timeline(){
       title: 'Pemateri Kesehatan Mental - Pra LKMM-TD 2024',
       description: 'Berbagi materi dan pengalaman tentang kesehatan mental kepada peserta kegiatan pra LKMM-TD 2024.',
       tags: ['Mentor', 'Mental Health', 'Public Speaking'],
-    },
-    {
-      period: '2024',
-      title: 'Volunteer Performance - DUGEN 2024',
-      description: 'Mendukung jalannya penampilan dan kebutuhan teknis sebagai volunteer pada kegiatan DUGEN 2024.',
-      tags: ['Volunteer', 'Performance'],
-    },
-    {
-      period: '2024 / 2025',
-      title: 'Kakak Asuh TPB 52',
-      description: 'Membimbing mahasiswa TPB sebagai kakak asuh untuk membantu adaptasi awal perkuliahan dan kehidupan kampus.',
-      tags: ['Mentoring', 'Student Support'],
+      images: [
+        assetPath('/pemateri%201.jpeg'),
+        assetPath('/pemateri%202.jpeg'),
+        assetPath('/pemateri%203.jpeg'),
+      ],
+      imageAlt: 'Dokumentasi Pemateri Kesehatan Mental Pra LKMM-TD 2024',
     },
     {
       period: '2024',
       title: 'HMIF Mengabdi 2024',
       description: 'Menjadi MC di panti asuhan, PJ kelas, dan PJ game di SD sebagai bagian dari kegiatan pengabdian masyarakat.',
       tags: ['Community Service', 'MC', 'Education'],
+      images: [
+        assetPath('/mengabdi%201.jpeg'),
+        assetPath('/mengabdi%202.jpeg'),
+        assetPath('/mengabdi%203.jpeg'),
+        assetPath('/mengabdi%204.jpeg'),
+        assetPath('/mengabdi%205.jpeg'),
+      ],
+      imageAlt: 'Dokumentasi HMIF Mengabdi 2024',
+    },
+    {
+      period: '2024 / 2025',
+      title: 'Kakak Asuh TPB 52',
+      description: 'Membimbing mahasiswa TPB sebagai kakak asuh untuk membantu adaptasi awal perkuliahan dan kehidupan kampus.',
+      tags: ['Mentoring', 'Student Support'],
+      images: [
+        assetPath('/FOTO%20KAKAK%20ASUH%201.jpeg'),
+        assetPath('/FOTO%20KAKAK%20ASUH%202.jpeg'),
+      ],
+      imageAlt: 'Dokumentasi Kakak Asuh TPB 52',
     },
     {
       period: 'Jul 2024',
@@ -233,9 +308,15 @@ export default function Timeline(){
       description: 'Terlibat dalam penjagaan medis kegiatan di Gunung Betung untuk membantu respons kondisi darurat.',
       tags: ['Medical', 'Volunteer'],
     },
+    {
+      period: '2024',
+      title: 'Volunteer Performance - DUGEN 2024',
+      description: 'Mendukung jalannya penampilan dan kebutuhan teknis sebagai volunteer pada kegiatan DUGEN 2024.',
+      tags: ['Volunteer', 'Performance'],
+    },
   ]
 
-  const renderCards = (items: Array<{ period: string; title: string; description: string; tags: string[]; image?: string; images?: string[]; imageAlt?: string }>) => (
+  const renderCards = (items: Array<{ period: string; title: string; description: string; tags: string[]; image?: string; images?: string[]; imageAlt?: string; previewType?: 'image' | 'pdf' }>) => (
     <div className="grid gap-4 md:grid-cols-2">
       {items.map((item) => (
         <article key={`${item.title}-${item.period}`} className="p-5 bg-white/3 rounded-lg border border-white/10 hover:border-neon/40 transition-colors">
@@ -246,9 +327,26 @@ export default function Timeline(){
             </div>
           </div>
           {item.image ? (
-            <div className="mt-4 overflow-hidden rounded-xl border border-white/10 bg-black/20">
-              <img src={item.image} alt={item.imageAlt ?? item.title} className="h-48 w-full object-cover" />
-            </div>
+            item.previewType === 'pdf' ? (
+              <div className="mt-4 overflow-hidden rounded-xl border border-white/10 bg-black/20">
+                <a
+                  href={item.image}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex h-48 w-full items-center justify-center p-4 text-center transition hover:bg-white/5"
+                >
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.25em] text-neon">PDF</p>
+                    <h4 className="mt-3 font-semibold">{item.imageAlt ?? item.title}</h4>
+                    <p className="mt-2 text-sm text-white/70">Klik untuk membuka sertifikat</p>
+                  </div>
+                </a>
+              </div>
+            ) : (
+              <div className="mt-4 overflow-hidden rounded-xl border border-white/10 bg-black/20">
+                <img src={item.image} alt={item.imageAlt ?? item.title} className="h-48 w-full object-cover" />
+              </div>
+            )
           ) : item.images ? (
             <div className="mt-4 grid grid-cols-3 gap-2">
               {item.images.map((image, index) => (
