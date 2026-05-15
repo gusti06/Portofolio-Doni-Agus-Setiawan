@@ -30,7 +30,7 @@ export default function Timeline(){
       tags: ['Professional Development', 'Program Planning', 'HMIF'],
       image: assetPath('/Sertif%20HMIF.pdf'),
       imageAlt: 'Dokumentasi sertifikat HMIF ITERA',
-      previewType: 'pdf',
+      previewType: 'pdf' as const,
     },
     {
       period: 'Mar 2024 - Mar 2025',
