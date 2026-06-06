@@ -79,15 +79,12 @@ export default function Certificates(){
 
   return (
     <section id="certificates" className="py-16" data-aos="fade-up">
-      <div className="flex items-end justify-between gap-4 mb-6">
-        <div>
-          <p className="text-neon text-sm uppercase tracking-[0.25em]">Certificates</p>
-          <h2 className="text-2xl font-bold">Certifications & Achievements</h2>
-        </div>
-        <div className="hidden md:flex items-center gap-2 text-sm text-white/70">
-          <span className="text-neon">✦</span>
-          Ready for PDF/preview upload
-        </div>
+      <div className="mb-8 max-w-2xl">
+        <p className="text-xs uppercase tracking-[0.35em] text-neon/80">Certificates</p>
+        <h2 className="mt-2 text-3xl font-bold md:text-4xl">Certifications & Achievements</h2>
+        <p className="mt-3 text-sm text-white/70">
+          Kumpulan sertifikat, penghargaan, dan dokumentasi kegiatan yang menunjukkan keterlibatan saya di organisasi, seminar, dan volunteer.
+        </p>
       </div>
 
       <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
@@ -98,8 +95,10 @@ export default function Certificates(){
             <article
               key={`${certificate.title}-${index}`}
               className={`group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-4 shadow-2xl shadow-cyan-950/20 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-neon/30 ${isFeatured ? 'md:col-span-2 xl:col-span-1' : ''}`}
+              data-aos={index % 2 === 0 ? 'zoom-in' : 'fade-up'}
+              data-aos-delay={index * 70}
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${certificate.tone} opacity-100`} />
+              <div className={`absolute inset-0 bg-gradient-to-br ${certificate.tone} opacity-100 transition duration-300 group-hover:opacity-100`} />
               <div className="absolute inset-0 bg-black/60" />
 
               <div className="relative flex h-full flex-col gap-4">
@@ -107,13 +106,15 @@ export default function Certificates(){
                   <span className="rounded-full border border-white/10 bg-black/30 px-3 py-1 text-xs uppercase tracking-[0.2em] text-white/80">
                     {certificate.category}
                   </span>
-                  <span className="text-sm text-white/70">{certificate.year}</span>
+                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.2em] text-white/65">
+                    {certificate.year}
+                  </span>
                 </div>
 
                 <div className={`overflow-hidden rounded-2xl border border-white/10 bg-white/5 ${isFeatured ? 'min-h-[280px]' : 'min-h-[220px]'}`}>
                   <div className="mb-3 flex items-center justify-between text-xs text-white/60">
                     <span>Certificate Preview</span>
-                    <span>{certificate.issuer}</span>
+                    <span className="max-w-[55%] truncate text-right">{certificate.issuer}</span>
                   </div>
 
                   {certificate.previewType === 'image' ? (
@@ -178,7 +179,7 @@ export default function Certificates(){
       </div>
 
       <p className="mt-5 text-sm text-white/55">
-        Kalau Anda ingin, saya bisa lanjut memasukkan file PDF asli ke setiap kartu setelah Anda upload ke folder project.
+        Beberapa kartu tersedia dalam format gambar dan PDF untuk memudahkan verifikasi dan preview langsung.
       </p>
     </section>
   )
