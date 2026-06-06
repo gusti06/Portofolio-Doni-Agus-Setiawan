@@ -2,23 +2,23 @@ import { FaCode, FaPaintBrush, FaJsSquare, FaWordpress, FaProjectDiagram, FaChar
 
 export default function Skills(){
   const hard = [
-    { name: 'HTML', level: 92, icon: FaCode },
-    { name: 'CSS', level: 90, icon: FaPaintBrush },
-    { name: 'JavaScript', level: 86, icon: FaJsSquare },
-    { name: 'WordPress', level: 84, icon: FaWordpress },
-    { name: 'UI/UX', level: 78, icon: FaProjectDiagram },
-    { name: 'OOP', level: 80, icon: FaCode },
-    { name: 'Data Analysis', level: 76, icon: FaChartBar },
-    { name: 'System Admin', level: 74, icon: FaCode },
+    { name: 'HTML', level: 92, icon: FaCode, category: 'Frontend', accent: 'from-emerald-300/20 to-cyan-300/10' },
+    { name: 'CSS', level: 90, icon: FaPaintBrush, category: 'Frontend', accent: 'from-sky-300/20 to-indigo-300/10' },
+    { name: 'JavaScript', level: 86, icon: FaJsSquare, category: 'Frontend', accent: 'from-amber-300/20 to-yellow-300/10' },
+    { name: 'WordPress', level: 84, icon: FaWordpress, category: 'CMS', accent: 'from-violet-300/20 to-fuchsia-300/10' },
+    { name: 'UI/UX', level: 78, icon: FaProjectDiagram, category: 'Design', accent: 'from-pink-300/20 to-rose-300/10' },
+    { name: 'OOP', level: 80, icon: FaCode, category: 'Programming', accent: 'from-teal-300/20 to-emerald-300/10' },
+    { name: 'Data Analysis', level: 76, icon: FaChartBar, category: 'Data', accent: 'from-cyan-300/20 to-sky-300/10' },
+    { name: 'System Admin', level: 74, icon: FaCode, category: 'Infra', accent: 'from-zinc-300/20 to-slate-300/10' },
   ]
   const soft = [
-    { name: 'Leadership', icon: FaUsers },
-    { name: 'Public Speaking', icon: FaComments },
-    { name: 'Teamwork', icon: FaHandshake },
-    { name: 'Event Management', icon: FaBullhorn },
-    { name: 'Communication', icon: FaComments },
-    { name: 'Problem Solving', icon: FaLightbulb },
-    { name: 'Time Management', icon: FaClock },
+    { name: 'Leadership', icon: FaUsers, tag: 'Leading' },
+    { name: 'Public Speaking', icon: FaComments, tag: 'Communication' },
+    { name: 'Teamwork', icon: FaHandshake, tag: 'Collaboration' },
+    { name: 'Event Management', icon: FaBullhorn, tag: 'Organization' },
+    { name: 'Communication', icon: FaComments, tag: 'Communication' },
+    { name: 'Problem Solving', icon: FaLightbulb, tag: 'Analysis' },
+    { name: 'Time Management', icon: FaClock, tag: 'Planning' },
   ]
   return (
     <section id="skills" className="py-16" data-aos="fade-up">
@@ -43,7 +43,7 @@ export default function Skills(){
             {hard.map(skill => (
               <span
                 key={skill.name}
-                className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/7 px-3 py-1.5 text-sm text-white/85 transition hover:border-neon/40 hover:text-neon"
+                className={`inline-flex items-center gap-2 rounded-full border border-white/10 bg-gradient-to-r ${skill.accent} px-3 py-1.5 text-sm text-white/85 transition hover:border-neon/40 hover:text-neon`}
               >
                 <skill.icon className="text-xs text-neon/90" />
                 {skill.name}
@@ -53,10 +53,12 @@ export default function Skills(){
 
           <div className="mt-6 space-y-4">
             {hard.map(skill => (
-              <div key={skill.name}>
+              <div key={skill.name} className="rounded-xl border border-white/5 bg-black/10 p-3">
                 <div className="mb-1 flex items-center justify-between text-sm">
                   <span className="font-medium text-white/90">{skill.name}</span>
-                  <span className="text-white/45">{skill.level}%</span>
+                  <span className="rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-[10px] uppercase tracking-[0.2em] text-white/45">
+                    {skill.category}
+                  </span>
                 </div>
                 <div className="h-2 overflow-hidden rounded-full bg-white/7">
                   <div
@@ -64,6 +66,7 @@ export default function Skills(){
                     style={{ width: `${skill.level}%` }}
                   />
                 </div>
+                <div className="mt-1 text-right text-xs text-white/40">{skill.level}% proficiency</div>
               </div>
             ))}
           </div>
@@ -87,7 +90,12 @@ export default function Skills(){
                   {String(index + 1).padStart(2, '0')}
                 </span>
                 <skill.icon className="text-base text-neon/80" />
-                <span className="text-sm font-medium text-white/85 transition group-hover:text-white">{skill.name}</span>
+                <div className="min-w-0 flex-1">
+                  <span className="block text-sm font-medium text-white/85 transition group-hover:text-white">{skill.name}</span>
+                  <span className="mt-0.5 inline-flex rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-[10px] uppercase tracking-[0.22em] text-white/45">
+                    {skill.tag}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
