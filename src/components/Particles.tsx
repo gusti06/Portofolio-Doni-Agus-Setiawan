@@ -48,5 +48,5 @@ export default function Particles(){
     }
   },[])
 
-  return <canvas ref={ref} className="fixed inset-0 -z-10 pointer-events-none" />
+  return <canvas ref={ref} className="fixed inset-0 -z-10 h-full w-full pointer-events-none" />
 }

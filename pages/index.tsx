@@ -12,7 +12,7 @@ import Particles from '../src/components/Particles'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-primary via-black to-black text-white animated-gradient">
+    <div className="min-h-screen overflow-x-hidden bg-gradient-to-b from-primary via-black to-black text-white animated-gradient">
       <Particles />
       <Head>
         <title>Doni Agus Setiawan — Portfolio</title>
