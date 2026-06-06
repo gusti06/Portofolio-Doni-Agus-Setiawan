@@ -19,7 +19,7 @@ export default function Projects(){
     {
       title: 'MageArena',
       category: 'Game Development',
-      desc: 'Project game dari GitHub yang saya upload untuk menampilkan pengembangan aplikasi interaktif dan logika permainan.',
+      desc: 'Project game berbasis arena untuk menampilkan pengembangan gameplay, logika permainan, dan interaksi pengguna.',
       tech: ['Game Development','JavaScript'],
       github: 'https://github.com/gusti06/MageArena',
       demo: ''
