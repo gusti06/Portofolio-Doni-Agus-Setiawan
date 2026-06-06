@@ -52,7 +52,7 @@ export default function Projects(){
 
   return (
     <section id="projects" className="py-16">
-      <div className="mb-8 max-w-2xl">
+      <div className="mb-8 max-w-2xl" data-aos="fade-up">
         <p className="text-xs uppercase tracking-[0.35em] text-neon/80">Selected Work</p>
         <h2 className="mt-2 text-3xl font-bold md:text-4xl">Featured Projects</h2>
         <p className="mt-3 text-sm text-white/70">
@@ -61,10 +61,12 @@ export default function Projects(){
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-        {projects.map(p=> (
+        {projects.map((p, index)=> (
           <article
             key={p.title}
             className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-5 shadow-lg shadow-black/10 transition duration-300 hover:-translate-y-1 hover:border-neon/40 hover:bg-white/7"
+            data-aos={index % 2 === 0 ? 'fade-up' : 'fade-up'}
+            data-aos-delay={index * 80}
           >
             <div className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full bg-neon/10 blur-3xl transition duration-300 group-hover:bg-neon/20" />
             <div className="relative flex items-start justify-between gap-3">
