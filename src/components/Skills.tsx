@@ -40,10 +40,12 @@ export default function Skills(){
           </div>
 
           <div className="flex flex-wrap gap-2">
-            {hard.map(skill => (
+            {hard.map((skill, index) => (
               <span
                 key={skill.name}
                 className={`inline-flex items-center gap-2 rounded-full border border-white/10 bg-gradient-to-r ${skill.accent} px-3 py-1.5 text-sm text-white/85 transition hover:border-neon/40 hover:text-neon`}
+                data-aos="zoom-in"
+                data-aos-delay={index * 60}
               >
                 <skill.icon className="text-xs text-neon/90" />
                 {skill.name}
@@ -52,8 +54,13 @@ export default function Skills(){
           </div>
 
           <div className="mt-6 space-y-4">
-            {hard.map(skill => (
-              <div key={skill.name} className="rounded-xl border border-white/5 bg-black/10 p-3">
+            {hard.map((skill, index) => (
+              <div
+                key={skill.name}
+                className="rounded-xl border border-white/5 bg-black/10 p-3"
+                data-aos="fade-right"
+                data-aos-delay={index * 80}
+              >
                 <div className="mb-1 flex items-center justify-between text-sm">
                   <span className="font-medium text-white/90">{skill.name}</span>
                   <span className="rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-[10px] uppercase tracking-[0.2em] text-white/45">
@@ -85,6 +92,8 @@ export default function Skills(){
               <div
                 key={skill.name}
                 className="group flex items-center gap-3 rounded-xl border border-white/10 bg-black/15 px-4 py-3 transition duration-300 hover:border-neon/40 hover:bg-white/7"
+                data-aos="fade-left"
+                data-aos-delay={index * 70}
               >
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-neon/15 text-sm font-semibold text-neon">
                   {String(index + 1).padStart(2, '0')}
