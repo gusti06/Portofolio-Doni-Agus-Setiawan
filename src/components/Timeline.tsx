@@ -318,13 +318,21 @@ export default function Timeline(){
 
   const renderCards = (items: Array<{ period: string; title: string; description: string; tags: string[]; image?: string; images?: string[]; imageAlt?: string; previewType?: 'image' | 'pdf' }>) => (
     <div className="grid gap-4 md:grid-cols-2">
-      {items.map((item) => (
-        <article key={`${item.title}-${item.period}`} className="p-5 bg-white/3 rounded-lg border border-white/10 hover:border-neon/40 transition-colors">
+      {items.map((item, index) => (
+        <article
+          key={`${item.title}-${item.period}`}
+          className="group rounded-2xl border border-white/10 bg-white/5 p-5 shadow-lg shadow-black/10 transition duration-300 hover:-translate-y-1 hover:border-neon/40 hover:bg-white/7"
+          data-aos={index % 2 === 0 ? 'fade-up' : 'fade-up'}
+          data-aos-delay={index * 70}
+        >
           <div className="flex items-start justify-between gap-4 flex-wrap">
             <div>
-              <p className="text-xs uppercase tracking-[0.2em] text-neon">{item.period}</p>
-              <h3 className="font-semibold mt-2">{item.title}</h3>
+              <p className="text-xs uppercase tracking-[0.25em] text-neon/90">{item.period}</p>
+              <h3 className="mt-2 text-lg font-semibold leading-tight group-hover:text-neon">{item.title}</h3>
             </div>
+            <span className="rounded-full border border-white/10 bg-black/20 px-3 py-1 text-[10px] uppercase tracking-[0.25em] text-white/55">
+              Experience
+            </span>
           </div>
           {item.image ? (
             item.previewType === 'pdf' ? (
@@ -363,7 +371,7 @@ export default function Timeline(){
           <p className="text-sm mt-3 text-white/80">{item.description}</p>
           <div className="mt-4 flex flex-wrap gap-2">
             {item.tags.map((tag) => (
-              <span key={tag} className="px-2 py-1 bg-white/6 rounded-full text-xs">
+              <span key={tag} className="rounded-full border border-white/10 bg-white/6 px-2.5 py-1 text-xs text-white/80 transition group-hover:border-neon/30 group-hover:text-neon">
                 {tag}
               </span>
             ))}
@@ -375,26 +383,27 @@ export default function Timeline(){
 
   return (
     <section id="leadership" className="py-16" data-aos="fade-up">
-      <div className="flex items-end justify-between gap-4 mb-6">
-        <div>
-          <p className="text-neon text-sm uppercase tracking-[0.25em]">Experience</p>
-          <h2 className="text-2xl font-bold">Organisational, Committee, and Volunteer Experience</h2>
-        </div>
+      <div className="mb-8 max-w-2xl">
+        <p className="text-xs uppercase tracking-[0.35em] text-neon/80">Experience</p>
+        <h2 className="mt-2 text-3xl font-bold md:text-4xl">Organisational, Committee, and Volunteer Experience</h2>
+        <p className="mt-3 text-sm text-white/70">
+          Rekam jejak kegiatan, kepanitiaan, dan volunteer yang menunjukkan kepemimpinan, komunikasi, serta konsistensi saya.
+        </p>
       </div>
 
       <div className="space-y-10">
         <section>
-          <h3 className="text-lg font-semibold mb-4">Organisational Experience</h3>
+          <h3 className="mb-4 text-lg font-semibold text-white/90">Organisational Experience</h3>
           {renderCards(organisationalExperience)}
         </section>
 
         <section>
-          <h3 className="text-lg font-semibold mb-4">Kepanitiaan</h3>
+          <h3 className="mb-4 text-lg font-semibold text-white/90">Kepanitiaan</h3>
           {renderCards(committeeExperience)}
         </section>
 
         <section>
-          <h3 className="text-lg font-semibold mb-4">Volunteer</h3>
+          <h3 className="mb-4 text-lg font-semibold text-white/90">Volunteer</h3>
           {renderCards(volunteerExperience)}
         </section>
       </div>
