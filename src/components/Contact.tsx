@@ -10,77 +10,70 @@ export default function Contact(){
 
   return (
     <section id="contact" className="py-16" data-aos="fade-up">
-      <div className="mb-6">
-        <p className="text-neon text-sm uppercase tracking-[0.25em]">Contact Person</p>
-        <h2 className="text-2xl font-bold">Contact Me</h2>
+      <div className="mb-8 max-w-2xl">
+        <p className="text-xs uppercase tracking-[0.35em] text-neon/80">Contact Person</p>
+        <h2 className="mt-2 text-3xl font-bold md:text-4xl">Contact Me</h2>
+        <p className="mt-3 text-sm text-white/70">
+          Kalau Anda ingin berdiskusi tentang project, kolaborasi, organisasi, atau peluang profesional, silakan hubungi saya melalui kanal berikut.
+        </p>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2">
-        <div className="p-4 bg-white/3 rounded-lg border border-white/10 backdrop-blur">
-          <h3 className="text-lg font-semibold mb-4">Kontak Langsung</h3>
+      <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-5 shadow-lg shadow-black/10 backdrop-blur">
+          <div className="mb-5 flex items-center justify-between gap-3">
+            <h3 className="text-lg font-semibold">Kontak Langsung</h3>
+            <span className="rounded-full border border-neon/20 bg-neon/10 px-3 py-1 text-[10px] uppercase tracking-[0.25em] text-neon/90">
+              Available
+            </span>
+          </div>
 
           <div className="space-y-3 text-sm">
             <a
               href={whatsappLink}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-between rounded-xl border border-white/10 bg-black/20 px-4 py-3 transition hover:border-neon/40 hover:bg-white/5"
+              className="flex items-center justify-between gap-3 rounded-xl border border-white/10 bg-black/20 px-4 py-3 transition hover:border-neon/40 hover:bg-white/5"
             >
-              <span>
-                <span className="mr-2">📱</span>
-                WhatsApp
-              </span>
-              <span className="text-white/70">{whatsappNumber}</span>
+              <span className="font-medium text-white/90">WhatsApp</span>
+              <span className="text-right text-white/70">{whatsappNumber}</span>
             </a>
 
             <a
               href={instagram}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-between rounded-xl border border-white/10 bg-black/20 px-4 py-3 transition hover:border-neon/40 hover:bg-white/5"
+              className="flex items-center justify-between gap-3 rounded-xl border border-white/10 bg-black/20 px-4 py-3 transition hover:border-neon/40 hover:bg-white/5"
             >
-              <span>
-                <span className="mr-2">📸</span>
-                Instagram
-              </span>
-              <span className="text-white/70 break-all text-right">{instagramUsername}</span>
+              <span className="font-medium text-white/90">Instagram</span>
+              <span className="break-all text-right text-white/70">{instagramUsername}</span>
             </a>
 
             <a
               href={`mailto:${email}`}
-              className="flex items-center justify-between rounded-xl border border-white/10 bg-black/20 px-4 py-3 transition hover:border-neon/40 hover:bg-white/5"
+              className="flex items-center justify-between gap-3 rounded-xl border border-white/10 bg-black/20 px-4 py-3 transition hover:border-neon/40 hover:bg-white/5"
             >
-              <span>
-                <span className="mr-2">✉️</span>
-                Email
-              </span>
-              <span className="text-white/70 break-all text-right">{email}</span>
+              <span className="font-medium text-white/90">Email</span>
+              <span className="break-all text-right text-white/70">{email}</span>
             </a>
 
             <a
               href={github}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-between rounded-xl border border-white/10 bg-black/20 px-4 py-3 transition hover:border-neon/40 hover:bg-white/5"
+              className="flex items-center justify-between gap-3 rounded-xl border border-white/10 bg-black/20 px-4 py-3 transition hover:border-neon/40 hover:bg-white/5"
             >
-              <span>
-                <span className="mr-2">🐙</span>
-                GitHub
-              </span>
-              <span className="text-white/70 break-all text-right">{githubUsername}</span>
+              <span className="font-medium text-white/90">GitHub</span>
+              <span className="break-all text-right text-white/70">{githubUsername}</span>
             </a>
 
             <a
               href={linkedin}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-between rounded-xl border border-white/10 bg-black/20 px-4 py-3 transition hover:border-neon/40 hover:bg-white/5"
+              className="flex items-center justify-between gap-3 rounded-xl border border-white/10 bg-black/20 px-4 py-3 transition hover:border-neon/40 hover:bg-white/5"
             >
-              <span>
-                <span className="mr-2">in</span>
-                LinkedIn
-              </span>
-              <span className="text-white/70 break-all text-right">doni-agus-setiawan-a7a0202b2</span>
+              <span className="font-medium text-white/90">LinkedIn</span>
+              <span className="break-all text-right text-white/70">doni-agus-setiawan-a7a0202b2</span>
             </a>
           </div>
 
@@ -90,14 +83,15 @@ export default function Contact(){
           </div>
         </div>
 
-        <form className="p-4 bg-white/3 rounded-lg border border-white/10 backdrop-blur">
-          <label className="block mb-2">Name</label>
-          <input className="w-full p-2 mb-3 rounded bg-black/20 outline-none ring-0 focus:border-neon/50 border border-white/10" />
-          <label className="block mb-2">Email</label>
-          <input className="w-full p-2 mb-3 rounded bg-black/20 outline-none ring-0 focus:border-neon/50 border border-white/10" />
-          <label className="block mb-2">Message</label>
-          <textarea className="w-full p-2 mb-3 rounded bg-black/20 outline-none ring-0 focus:border-neon/50 border border-white/10" rows={5} />
-          <button className="px-4 py-2 bg-neon text-black rounded font-semibold transition hover:brightness-110">Send Message</button>
+        <form className="rounded-2xl border border-white/10 bg-white/5 p-5 shadow-lg shadow-black/10 backdrop-blur">
+          <h3 className="mb-5 text-lg font-semibold">Quick Message</h3>
+          <label className="mb-2 block text-sm text-white/80">Name</label>
+          <input className="mb-3 w-full rounded-xl border border-white/10 bg-black/20 p-3 outline-none ring-0 transition placeholder:text-white/30 focus:border-neon/50" placeholder="Your name" />
+          <label className="mb-2 block text-sm text-white/80">Email</label>
+          <input className="mb-3 w-full rounded-xl border border-white/10 bg-black/20 p-3 outline-none ring-0 transition placeholder:text-white/30 focus:border-neon/50" placeholder="your@email.com" />
+          <label className="mb-2 block text-sm text-white/80">Message</label>
+          <textarea className="mb-4 w-full rounded-xl border border-white/10 bg-black/20 p-3 outline-none ring-0 transition placeholder:text-white/30 focus:border-neon/50" rows={5} placeholder="Tell me about your project..." />
+          <button className="rounded-full bg-neon px-5 py-3 font-semibold text-black transition hover:brightness-110">Send Message</button>
         </form>
       </div>
     </section>
