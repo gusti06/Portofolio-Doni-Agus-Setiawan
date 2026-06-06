@@ -17,6 +17,14 @@ export default function Projects(){
       demo: ''
     },
     {
+      title: 'MageArena',
+      category: 'Game Development',
+      desc: 'Project game dari GitHub yang saya upload untuk menampilkan pengembangan aplikasi interaktif dan logika permainan.',
+      tech: ['Game Development','JavaScript'],
+      github: 'https://github.com/gusti06/MageArena',
+      demo: ''
+    },
+    {
       title: 'Website BUMDES Desa Hanura',
       category: 'Web Development',
       desc: 'Mengembangkan website BUMDES Desa Hanura saat kegiatan KKN sebagai media informasi dan digitalisasi layanan desa.',
