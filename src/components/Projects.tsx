@@ -1,6 +1,22 @@
 export default function Projects(){
   const projects = [
     {
+      title: 'GlycoAI — Deteksi Risiko Diabetes',
+      category: 'Kecerdasan Komputasional',
+      desc: 'Tugas besar mata kuliah Kecerdasan Komputasional: web untuk deteksi risiko diabetes dan monitoring pasien diabetes.',
+      tech: ['Python','Flask','TensorFlow','JavaScript','HTML','CSS'],
+      github: 'https://github.com/gusti06/Tubes-KK_GlycoAI',
+      demo: ''
+    },
+    {
+      title: 'SmartMatch — Rekomendasi Laptop',
+      category: 'Kecerdasan Komputasional',
+      desc: 'Tugas besar Kecerdasan Komputasional: sistem rekomendasi pembelian laptop menggunakan metode pembelajaran mesin.',
+      tech: ['Python','scikit-learn','Flask','JavaScript','HTML','CSS'],
+      github: 'https://github.com/gusti06/Tubes-KK-SmartMatch',
+      demo: ''
+    },
+    {
       title: 'Website BUMDES Desa Hanura',
       category: 'Web Development',
       desc: 'Mengembangkan website BUMDES Desa Hanura saat kegiatan KKN sebagai media informasi dan digitalisasi layanan desa.',
