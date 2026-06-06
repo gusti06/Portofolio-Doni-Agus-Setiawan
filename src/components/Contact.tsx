@@ -19,26 +19,26 @@ export default function Contact(){
       </div>
 
       <div className="max-w-3xl mx-auto">
-        <div className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-lg shadow-black/10 backdrop-blur flex flex-col md:flex-row items-center gap-6">
-          <div className="flex-1">
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-lg shadow-black/10 backdrop-blur flex flex-col md:flex-row items-start gap-6">
+          <div className="flex-1 text-left">
             <h3 className="text-lg font-semibold">Contact Me</h3>
             <p className="mt-3 text-sm text-white/75">Saya terbuka untuk kolaborasi, project, mentoring, atau kesempatan organisasi. Pilih salah satu kanal di bawah untuk menghubungi saya langsung.</p>
 
             <div className="mt-5 flex flex-wrap gap-3">
-              <a href={whatsappLink} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-neon/90 px-4 py-2 text-sm font-semibold text-black transition hover:brightness-105">
+              <a href={whatsappLink} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-neon/90 px-4 py-2 text-sm font-semibold text-black transition-transform duration-200 transform hover:-translate-y-0.5 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-neon/40">
                 <span>WhatsApp</span>
                 <span className="text-xs text-black/70">{whatsappNumber}</span>
               </a>
 
-              <a href={`mailto:${email}`} className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/20 px-4 py-2 text-sm font-medium text-white/90 transition hover:bg-white/5">
+              <a href={`mailto:${email}`} className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/20 px-4 py-2 text-sm font-medium text-white/90 transition-transform duration-200 transform hover:-translate-y-0.5 hover:scale-102 focus:outline-none focus:ring-2 focus:ring-white/10">
                 Email
               </a>
 
-              <a href={linkedin} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/20 px-4 py-2 text-sm font-medium text-white/90 transition hover:bg-white/5">
+              <a href={linkedin} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/20 px-4 py-2 text-sm font-medium text-white/90 transition-transform duration-200 transform hover:-translate-y-0.5 hover:scale-102 focus:outline-none focus:ring-2 focus:ring-white/10">
                 LinkedIn
               </a>
 
-              <a href={github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/20 px-4 py-2 text-sm font-medium text-white/90 transition hover:bg-white/5">
+              <a href={github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/20 px-4 py-2 text-sm font-medium text-white/90 transition-transform duration-200 transform hover:-translate-y-0.5 hover:scale-102 focus:outline-none focus:ring-2 focus:ring-white/10">
                 GitHub
               </a>
             </div>
@@ -48,8 +48,8 @@ export default function Contact(){
             </div>
           </div>
 
-          <div className="w-full md:w-36 text-center">
-            <img src="/FOTO PORTO.jpeg" alt="Doni Agus Setiawan" className="mx-auto h-28 w-28 rounded-full object-cover border-2 border-white/10" />
+          <div className="w-full md:w-36 text-left md:text-center">
+            <img src="/FOTO PORTO.jpeg" alt="Doni Agus Setiawan" className="mx-0 md:mx-auto h-28 w-28 rounded-full object-cover border-2 border-white/10" />
             <p className="mt-3 text-sm text-white/75">Open to Collaboration</p>
           </div>
         </div>
