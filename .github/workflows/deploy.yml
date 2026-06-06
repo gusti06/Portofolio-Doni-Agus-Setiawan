@@ -32,6 +32,7 @@ jobs:
       - name: Build
         env:
           NEXT_PUBLIC_BASE_PATH: /Portofolio-Doni-Agus-Setiawan
+          NEXT_PUBLIC_ASSET_PREFIX: /Portofolio-Doni-Agus-Setiawan
         run: npm run build
 
       - name: Disable Jekyll
