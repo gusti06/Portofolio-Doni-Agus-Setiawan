@@ -29,6 +29,8 @@ export default function Header(){
           <a href="#about" className={`rounded-full px-3 py-1 transition-colors hover:bg-white/8 hover:text-neon ${active==='about' ? 'bg-white/8 text-neon' : ''}`}>About</a>
           <a href="#leadership" className={`rounded-full px-3 py-1 transition-colors hover:bg-white/8 hover:text-neon ${active==='leadership' ? 'bg-white/8 text-neon' : ''}`}>Leadership</a>
           <a href="#projects" className={`rounded-full px-3 py-1 transition-colors hover:bg-white/8 hover:text-neon ${active==='projects' ? 'bg-white/8 text-neon' : ''}`}>Projects</a>
+          <a href="#skills" className={`rounded-full px-3 py-1 transition-colors hover:bg-white/8 hover:text-neon ${active==='skills' ? 'bg-white/8 text-neon' : ''}`}>Skills</a>
+          <a href="#certificates" className={`rounded-full px-3 py-1 transition-colors hover:bg-white/8 hover:text-neon ${active==='certificates' ? 'bg-white/8 text-neon' : ''}`}>Certificates</a>
           <a href="#contact" className={`rounded-full px-3 py-1 transition-colors hover:bg-white/8 hover:text-neon ${active==='contact' ? 'bg-white/8 text-neon' : ''}`}>Contact</a>
         </nav>
       </div>
