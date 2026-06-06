@@ -16,6 +16,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_BASE_PATH: /Portofolio-Doni-Agus-Setiawan
+      NEXT_PUBLIC_ASSET_PREFIX: /Portofolio-Doni-Agus-Setiawan
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,10 +32,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Validate env
+        run: |
+          if [ -z "$NEXT_PUBLIC_BASE_PATH" ] || [ -z "$NEXT_PUBLIC_ASSET_PREFIX" ]; then
+            echo "ERROR: NEXT_PUBLIC_BASE_PATH or NEXT_PUBLIC_ASSET_PREFIX is not set"
+            exit 1
+          fi
+
       - name: Build
-        env:
-          NEXT_PUBLIC_BASE_PATH: /Portofolio-Doni-Agus-Setiawan
-          NEXT_PUBLIC_ASSET_PREFIX: /Portofolio-Doni-Agus-Setiawan
         run: npm run build
 
       - name: Disable Jekyll
