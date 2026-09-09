@@ -15,7 +15,7 @@ export default function About(){
 
         <div className="rounded-2xl border border-white/10 bg-white/5 p-5 shadow-lg shadow-black/10">
           <p className="text-sm leading-7 text-white/75">
-            Saya memiliki pengalaman dalam pengembangan website desa dan BUMDES saat kegiatan KKN, serta pernah mengembangkan game sebagai project mata kuliah Pemrograman Berorientasi Objek. Fokus saya adalah membangun solusi yang bermanfaat, rapi, dan siap digunakan.
+            Saya memiliki pengalaman membuat website YANKOMAS saat magang di Kantor Imigrasi Kelas I TPI Bandung, serta mengembangkan website desa dan BUMDES saat kegiatan KKN dan game sebagai project mata kuliah Pemrograman Berorientasi Objek. Fokus saya adalah membangun solusi yang bermanfaat, rapi, dan siap digunakan.
           </p>
         </div>
       </div>

@@ -1,6 +1,14 @@
 export default function Projects(){
   const projects = [
     {
+      title: 'YANKOMAS - Layanan Pengaduan Imigrasi',
+      category: 'Web Development',
+      desc: 'Mengembangkan website layanan pengaduan imigrasi saat magang di Kantor Imigrasi Kelas I TPI Bandung.',
+      tech: ['HTML','CSS','JavaScript'],
+      github: 'https://github.com/handi18/YANKOMAS.git',
+      demo: 'https://yankomas.infinityfree.io/?i=1'
+    },
+    {
       title: 'Website BUMDES Desa Hanura',
       category: 'Web Development',
       desc: 'Mengembangkan website BUMDES Desa Hanura saat kegiatan KKN sebagai media informasi dan digitalisasi layanan desa.',

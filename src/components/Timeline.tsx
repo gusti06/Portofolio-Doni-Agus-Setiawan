@@ -178,84 +178,6 @@ export default function Timeline(){
       ],
       imageAlt: 'Dokumentasi PPLK 2024 - Sekre Medis',
     },
-    {
-      period: '2024',
-      title: 'IFGTTPB 2024 - Acara, PJ Game',
-      description: 'Mengelola bagian acara serta bertanggung jawab pada pelaksanaan game agar kegiatan lebih interaktif.',
-      tags: ['Event', 'Game', 'Fun Activity'],
-    },
-    {
-      period: '2024',
-      title: 'INTEX 2024 - Acara',
-      description: 'Mendukung pelaksanaan inti acara, koordinasi rundown, dan kesiapan teknis selama kegiatan.',
-      tags: ['Event', 'Rundown'],
-    },
-    {
-      period: '2024',
-      title: 'FTI EXPO 2024 - Acara',
-      description: 'Membantu operasional acara dan memastikan kebutuhan pelaksanaan kegiatan terpenuhi.',
-      tags: ['Event', 'Operations'],
-    },
-    {
-      period: '2025',
-      title: 'OPREC PIK-R 2025 - Acara, MC, Moderator',
-      description: 'Berperan dalam pelaksanaan open recruitment sebagai tim acara, MC, dan moderator kegiatan.',
-      tags: ['Event', 'MC', 'Moderator'],
-    },
-    {
-      period: '2025',
-      title: 'OPREC KSR 2025 - PJ Daplok',
-      description: 'Bertanggung jawab atas dapur logistik untuk memastikan kebutuhan konsumsi dan perlengkapan tersedia.',
-      tags: ['Logistics', 'Consumption'],
-    },
-    {
-      period: '2025',
-      title: 'FG KSR 2025 - Kadiv PDD',
-      description: 'Memimpin divisi publikasi dan dokumentasi untuk mendukung publikasi kegiatan dan dokumentasi acara.',
-      tags: ['PDD', 'Documentation', 'Leadership'],
-    },
-    {
-      period: '2025',
-      title: 'PILDUGEN 2025 - Staff Humas',
-      description: 'Mendukung tim humas dalam komunikasi, koordinasi, dan hubungan antar pihak selama kegiatan.',
-      tags: ['Public Relations', 'Communication'],
-    },
-    {
-      period: '2025',
-      title: 'Seminar Infest HMIF 2025 - Kadiv Acara',
-      description: 'Mengatur jalannya acara seminar, koordinasi panitia, dan memastikan kegiatan berjalan lancar.',
-      tags: ['Event', 'Leadership'],
-    },
-    {
-      period: '2025',
-      title: 'Mubes Oktober HMIF 2025 - Staf PDD Point Project',
-      description: 'Membantu publikasi, dokumentasi, dan kebutuhan visual untuk mendukung agenda point project.',
-      tags: ['PDD', 'Visual'],
-    },
-    {
-      period: '2025',
-      title: 'Mubes Oktober HMIF 2025 - Staff PDD / Media Kreatif',
-      description: 'Membuat dan mengelola materi media kreatif untuk mendukung dokumentasi serta publikasi acara.',
-      tags: ['Media Creative', 'PDD'],
-    },
-    {
-      period: '2025',
-      title: 'Dies Natalis KSR 2025 - Humas',
-      description: 'Menjalankan tugas kehumasan untuk membantu komunikasi, promosi, dan koordinasi kegiatan.',
-      tags: ['Public Relations', 'Communication'],
-    },
-    {
-      period: '2025',
-      title: 'HMIF Career Development 2025 - Humas',
-      description: 'Mendukung kebutuhan humas dan komunikasi dalam kegiatan pengembangan karier mahasiswa.',
-      tags: ['Public Relations', 'Career Development'],
-    },
-    {
-      period: '2025',
-      title: 'Sarasehan IF 2025 - Acara',
-      description: 'Membantu tim acara dalam persiapan dan pelaksanaan sarasehan agar berlangsung tertib dan nyaman.',
-      tags: ['Event', 'Coordination'],
-    },
   ]
 
   const volunteerExperience = [
@@ -295,24 +217,6 @@ export default function Timeline(){
         assetPath('/FOTO%20KAKAK%20ASUH%202.jpeg'),
       ],
       imageAlt: 'Dokumentasi Kakak Asuh TPB 52',
-    },
-    {
-      period: 'Jul 2024',
-      title: 'Medis Riuh Periode Juli 2024 - HMEI',
-      description: 'Mendukung kebutuhan medis kegiatan Riuh agar keamanan dan pertolongan pertama tetap terjaga.',
-      tags: ['Medical', 'Event Safety'],
-    },
-    {
-      period: '2024',
-      title: 'Jaga Medis - Gunung Betung',
-      description: 'Terlibat dalam penjagaan medis kegiatan di Gunung Betung untuk membantu respons kondisi darurat.',
-      tags: ['Medical', 'Volunteer'],
-    },
-    {
-      period: '2024',
-      title: 'Volunteer Performance - DUGEN 2024',
-      description: 'Mendukung jalannya penampilan dan kebutuhan teknis sebagai volunteer pada kegiatan DUGEN 2024.',
-      tags: ['Volunteer', 'Performance'],
     },
   ]
 

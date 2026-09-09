@@ -13,6 +13,15 @@ type CertificateItem = {
 export default function Certificates(){
   const list: CertificateItem[] = [
     {
+      title: 'Sertifikat Magang - Kantor Imigrasi Kelas I TPI Bandung',
+      issuer: 'Kantor Imigrasi Kelas I TPI Bandung',
+      year: '2026',
+      category: 'Internship',
+      tone: 'from-emerald-200/20 via-white/5 to-cyan-400/10',
+      file: assetPath('/certificates/Sertif%20Magang%20Kanim%20Bandung.pdf'),
+      previewType: 'pdf'
+    },
+    {
       title: 'Panitia Pelatihan Dosen Wali dan CHIT-CHAT',
       issuer: 'Institut Teknologi Sumatera',
       year: '2024',
