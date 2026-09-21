@@ -1,6 +1,8 @@
+import { useState } from 'react'
 import { assetPath } from '../lib/assetPath'
 
 export default function Timeline(){
+  const [filter, setFilter] = useState('ALL')
   const organisationalExperience = [
     {
       period: '6 Jan 2026 - 6 Feb 2026',
@@ -220,6 +222,8 @@ export default function Timeline(){
     },
   ]
 
+  const leadershipExperience = organisationalExperience.filter((item) => item.tags.includes('Leadership'))
+
   const renderCards = (items: Array<{ period: string; title: string; description: string; tags: string[]; image?: string; images?: string[]; imageAlt?: string; previewType?: 'image' | 'pdf' }>) => (
     <div className="grid gap-4 md:grid-cols-2">
       {items.map((item, index) => (
@@ -286,30 +290,28 @@ export default function Timeline(){
   )
 
   return (
-    <section id="leadership" className="py-16" data-aos="fade-up">
-      <div className="mb-8 max-w-2xl">
-        <p className="text-xs uppercase tracking-[0.35em] text-neon/80">Experience</p>
-        <h2 className="mt-2 text-3xl font-bold md:text-4xl">Organisational, Committee, and Volunteer Experience</h2>
-        <p className="mt-3 text-sm text-white/70">
+    <section id="leadership" className="content-section timeline-section" data-aos="fade-up">
+      <div className="section-heading"><p className="section-kicker">02 / EXPERIENCE</p><h2>BUILDING THROUGH<br /><span>PARTICIPATION.</span></h2><p className="section-note">
           Rekam jejak kegiatan, kepanitiaan, dan volunteer yang menunjukkan kepemimpinan, komunikasi, serta konsistensi saya.
-        </p>
-      </div>
+        </p></div>
+      <div className="filter-row">{['ALL','LEADERSHIP','ORGANIZATION','COMMITTEE','VOLUNTEER'].map((item)=><button key={item} type="button" className={filter===item?'selected':''} onClick={()=>setFilter(item)}>{item}</button>)}</div>
 
       <div className="space-y-10">
-        <section>
-          <h3 className="mb-4 text-lg font-semibold text-white/90">Organisational Experience</h3>
+        {(filter==='ALL'||filter==='ORGANIZATION')&&<section className="experience-group"><h3>ORGANIZATION</h3>
           {renderCards(organisationalExperience)}
-        </section>
+        </section>}
 
-        <section>
-          <h3 className="mb-4 text-lg font-semibold text-white/90">Kepanitiaan</h3>
+        {filter==='LEADERSHIP'&&<section className="experience-group"><h3>LEADERSHIP</h3>
+          {renderCards(leadershipExperience)}
+        </section>}
+
+        {(filter==='ALL'||filter==='COMMITTEE')&&<section className="experience-group"><h3>COMMITTEE</h3>
           {renderCards(committeeExperience)}
-        </section>
+        </section>}
 
-        <section>
-          <h3 className="mb-4 text-lg font-semibold text-white/90">Volunteer</h3>
+        {(filter==='ALL'||filter==='VOLUNTEER')&&<section className="experience-group"><h3>VOLUNTEER</h3>
           {renderCards(volunteerExperience)}
-        </section>
+        </section>}
       </div>
     </section>
   )

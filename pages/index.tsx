@@ -8,19 +8,17 @@ import Skills from '../src/components/Skills'
 import Certificates from '../src/components/Certificates'
 import Contact from '../src/components/Contact'
 import Footer from '../src/components/Footer'
-import Particles from '../src/components/Particles'
 
 export default function Home() {
   return (
-    <div className="min-h-screen overflow-x-hidden bg-gradient-to-b from-primary via-black to-black text-white animated-gradient">
-      <Particles />
+    <div className="site-shell">
       <Head>
         <title>Doni Agus Setiawan — Portfolio</title>
         <meta name="description" content="Portfolio Doni Agus Setiawan — Mahasiswa Teknik Informatika ITERA" />
       </Head>
 
       <Header />
-      <main className="container mx-auto px-4">
+      <main className="site-main">
         <Hero />
         <About />
         <Timeline />
